@@ -2,3 +2,6 @@ git에 파일 올리기
 
 git add .
 
+git commit -m "my second"
+
+git push origin master

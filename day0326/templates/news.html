@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>검색하기</h2>
+    <hr>
+
+
+    <table border="1">
+        <tr>
+            <td>뉴스제목</td>
+        </tr>
+        {% for i in news %}
+        <tr>
+            <td><a href="{{ i['url'] }}">{{ i['title'] }}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

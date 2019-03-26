@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>토,일,공휴일에 영업하는 약국목록</h2>
+    <hr>
+    <table border="1">
+        <tr>
+            <td>약국 이름</td>
+            <td>약국 주소</td>
+        </tr>
+        {% for i in list %}
+        <tr>
+            <td> <a href="/pharm/{{loop.index}}">{{ i['name'] }}</a></td>
+            <td>{{ i['addr'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
