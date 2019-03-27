@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>공용주차장 목록</h2>
+    <hr>
+    <table border="1">
+        <tr>
+            <td>주차장 이름</td>
+            <td>주차장 주소</td>
+        </tr>
+        {% for i in Plist %}
+        <tr>
+            <td> <a href="/parkingMap/{{loop.index}}">{{ i['name'] }}</a></td>
+            <td>{{ i['addr'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

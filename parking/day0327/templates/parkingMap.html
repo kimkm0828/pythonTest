@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bcf305ee3247b6c9bda1bb410db6ebea"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new daum.maps.LatLng({{item['LAT']}}, {{item['LNG']}}),
+			level: 3
+		};
+
+		var map = new daum.maps.Map(container, options);
+	</script>
+</body>
+</html>
